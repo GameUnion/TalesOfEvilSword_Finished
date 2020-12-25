@@ -116,7 +116,7 @@ public class Inventory2 : MonoBehaviour {
 		//还原窗口位置
 		if(showInventory)
 		{
-			InventoryUI.transform.FindChild("Win").position =InventoryUI.transform .position ;
+			InventoryUI.transform.Find("Win").position =InventoryUI.transform .position ;
 		}
 
 		InventoryUI .SetActive(showInventory);

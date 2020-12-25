@@ -8,7 +8,7 @@
         void OnGUI()
         {
             LightmapEditorSettings.maxAtlasHeight = EditorGUILayout.IntPopup("Max Atlas Size", LightmapEditorSettings.maxAtlasHeight, kSizeStrings, kSizeValues);
-            LightmapEditorSettings.maxAtlasWidth = LightmapEditorSettings.maxAtlasHeight;
+            LightmapEditorSettings.maxAtlasSize = LightmapEditorSettings.maxAtlasHeight;
         }
      
         [MenuItem("Utilities/Max Atlas Size")]

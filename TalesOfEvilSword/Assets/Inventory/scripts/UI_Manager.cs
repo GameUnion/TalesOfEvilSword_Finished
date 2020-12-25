@@ -14,13 +14,13 @@ public class UI_Manager : MonoBehaviour {
 
 	void Start()
 	{
-		equipment = transform .FindChild ("equipment");
-		inventory = transform .FindChild ("inventory");
-		short_cut = transform .FindChild ("short cut");
-		skill = transform .FindChild ("skill_UI");
-		store = transform .FindChild ("store");
-		temp = transform .FindChild ("Temp");
-		tooltip = transform .FindChild ("Tooltip");
+		equipment = transform .Find ("equipment");
+		inventory = transform .Find ("inventory");
+		short_cut = transform .Find ("short cut");
+		skill = transform .Find ("skill_UI");
+		store = transform .Find ("store");
+		temp = transform .Find ("Temp");
+		tooltip = transform .Find ("Tooltip");
 
 		//初始化UI位置
 		UI.Add (equipment);

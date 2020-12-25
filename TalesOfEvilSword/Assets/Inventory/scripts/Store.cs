@@ -137,7 +137,7 @@ public class Store : MonoBehaviour {
 		//还原窗口位置
 		if(Show_Store)
 		{
-			transform .FindChild("Win").position =transform .position ;
+			transform .Find("Win").position =transform .position ;
 		}
 
 		StoreUI.SetActive(Show_Store);

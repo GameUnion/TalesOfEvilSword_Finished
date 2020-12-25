@@ -71,7 +71,7 @@ public class Skill_UI : MonoBehaviour {
 		//还原窗口位置
 		if(Show_Skill)
 		{
-			transform .FindChild("Win").position =transform .position ;
+			transform .Find("Win").position =transform .position ;
 		}
 		skillWin .SetActive(Show_Skill);
 		//置顶窗口

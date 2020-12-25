@@ -28,7 +28,7 @@ public class EnemyCharacter : MonoBehaviour {
 
 	public float AttackInterval = 3f;
 
-	private NavMeshAgent navAgent = null;
+	private UnityEngine.AI.NavMeshAgent navAgent = null;
 
 	private AudioSource hurtClip;
 
@@ -45,7 +45,7 @@ public class EnemyCharacter : MonoBehaviour {
 		player.allEnemies.Add(this.gameObject);
 		attackTimer = AttackInterval;
 		attribute = GetComponent<CharacterAttribute>( );
-		navAgent = GetComponent<NavMeshAgent>( );
+		navAgent = GetComponent<UnityEngine.AI.NavMeshAgent>( );
 		if( isPatrol )
 			mobPoints = GameObject.FindGameObjectsWithTag("MobPoint");
 		if ( mobPoints != null && mobPoints.Length > 0 ) {

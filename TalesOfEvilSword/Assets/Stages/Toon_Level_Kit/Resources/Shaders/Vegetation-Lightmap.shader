@@ -1,3 +1,5 @@
+// Upgrade NOTE: replaced 'mul(UNITY_MATRIX_MVP,*)' with 'UnityObjectToClipPos(*)'
+
 // Upgrade NOTE: commented out 'float4 unity_LightmapST', a built-in variable
 // Upgrade NOTE: commented out 'sampler2D unity_Lightmap', a built-in variable
 // Upgrade NOTE: replaced '_Object2World' with 'unity_ObjectToWorld'
@@ -83,7 +85,7 @@ inline float4 AnimateVertex2(float4 pos, float3 normal, float4 animParams, float
 		float4	windParams	= float4(0, v.color.g, v.color.r, v.color.b);		
 		// call vertex animation
 		float4 mdlPos = AnimateVertex2(v.vertex, v.normal, windParams, _SecondaryFactor);
-		o.pos = mul(UNITY_MATRIX_MVP,mdlPos);
+		o.pos = UnityObjectToClipPos(mdlPos);
 		o.uv = TRANSFORM_TEX(v.texcoord, _MainTex);
 		//o.spec = v.color;
 		#ifndef LIGHTMAP_OFF

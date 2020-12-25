@@ -36,7 +36,7 @@ public class Equip_Manager : MonoBehaviour {
 		//还原窗口位置
 		if(showEquipment)
 		{
-			EquipUI.transform .FindChild("Win").position =EquipUI.transform .position ;
+			EquipUI.transform .Find("Win").position =EquipUI.transform .position ;
 		}
 
 		EquipUI .SetActive(showEquipment);

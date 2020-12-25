@@ -92,7 +92,7 @@ public class Inventory : MonoBehaviour {
 						//showTooltip=true;
 
 						//物品被拖拽，并且当前没有其他物品被拖拽
-						if(e.isMouse && e.button==0 && e.type ==EventType.mouseDrag && !draggingItem )
+						if(e.isMouse && e.button==0 && e.type ==EventType.MouseDrag && !draggingItem )
 						{
 							draggingItem =true;
 							prevIndex =i;
@@ -101,7 +101,7 @@ public class Inventory : MonoBehaviour {
 
 						}
 						//当物品被拖拽时在另一个物品上弹起鼠标时进行交换物品
-						if(e.isMouse && e.type ==EventType .mouseUp && draggingItem )
+						if(e.isMouse && e.type ==EventType .MouseUp && draggingItem )
 						{
 							//物品交换
 							inventory[prevIndex]=Item;
@@ -127,7 +127,7 @@ public class Inventory : MonoBehaviour {
 				}
 				else 
 				{
-					if(e.isMouse && e.type ==EventType .mouseUp && draggingItem )
+					if(e.isMouse && e.type ==EventType .MouseUp && draggingItem )
 					{
 						//交换物品为空时
 						if(slotRect.Contains(Event .current.mousePosition))
